@@ -39,7 +39,7 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
-* another method using pointer notation
+*Alternative - another method using pointer notation
 *
 *char *_strcpy(char *dest, char *src)
 *{
