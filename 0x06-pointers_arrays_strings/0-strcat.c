@@ -26,7 +26,8 @@ char *_strcat(char *dest, char *src)
 	return (dest);
 }
 
-/** Alternatively - another method using pointer notation
+/**
+*Alternatively - another method using pointer notation
 *
 *char *_strcat(char *dest, char *src)
 *{
