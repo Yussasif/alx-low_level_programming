@@ -1,21 +1,21 @@
+#include <stdlib.h>
 #include "lists.h"
 
 /**
- * free_list - frees a list_t list
- * @head: head of linked list
- */
+ * free_list - Frees memory space of a list
+ * @head: Pointer to a struct pointer
+ * Return: Returns amount of node
+**/
+
 void free_list(list_t *head)
 {
-	list_t *current;
-	list_t *nxt;
+list_t *tmp;
+while (head != NULL)
+{
+tmp = head;
 
-	current = head;
-
-	while (current != NULL)
-	{
-		nxt = current->next;
-		free(current->str);
-		free(current);
-		current = nxt;
-	}
+free(head->str);
+free(tmp);
+head = head->next;
+}
 }

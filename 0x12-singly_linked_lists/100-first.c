@@ -1,11 +1,16 @@
 #include <stdio.h>
 
+void turtleHare(void) __attribute__ ((constructor));
+
 /**
- * premain - run before main
- */
-void __attribute__ ((constructor)) premain()
+ * turtleHare - prints strings before main
+ * Returns: nothing
+**/
+
+void turtleHare(void)
 {
-printf(
-"You're beat! and yet, you must allow,\nI bore my house upon my back!\n"
-);
+char *string1 = "You're beat! and yet, you must allow,";
+char *string2 = "I bore my house upon my back!";
+
+printf("%s\n%s\n", string1, string2);
 }
