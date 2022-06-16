@@ -1,1 +1,1 @@
-README for static libraries task
+C - STATIC LIBRARIES
